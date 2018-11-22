@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>Item Shopping App</title>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo">Item Shopping App</a>
+            </div>
+        </nav>
+        <div class="row" style="height: 100%;">
+            <div class="col m4" style="border-right: 1px solid black;height: 100%;">
+                <form name="filterForm" method="GET" action="/">
+                    <div class="input-field">
+                        <input name="search" placeholder="Search">
+                    </div>
+                    <div>
+                        Price
+                        <br>
+                        <label>
+                                <input name="price" type="radio" value="low"/>
+                                <span>< 20</span>
+                        </label>
+                        <label>
+                                <input name="price" type="radio" value="mid"/>
+                                <span> 20 - 40</span>
+                        </label>
+                        <label>
+                                <input name="price" type="radio" value="high"/>
+                                <span> > 40 </span>
+                        </label>
+                        <label>
+                                <input name="price" type="radio" value="all" checked/>
+                                <span> All </span>
+                        </label>
+                    </div>
+                    <div>
+                        Rating
+                        <br>
+                        <label>
+                                <input name="rating" type="radio" value="1" checked/>
+                                <span> 1 </span>
+                        </label>
+                        <label>
+                                <input name="rating" type="radio" value="2" checked/>
+                                <span> 2 </span>
+                        </label>
+                        <label>
+                                <input name="rating" type="radio" value="3" checked/>
+                                <span> 3 </span>
+                        </label>
+                        <label>
+                                <input name="rating" type="radio" value="4" checked/>
+                                <span> 4 </span>
+                        </label>
+                        <label>
+                            <input name="rating" type="radio" value="5" checked />
+                            <span> 5 </span>
+                        </label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">Filter</button>
+                </form>
+            </div>
+            <div class="col m8">
+                <h2 class="center-align">Items</h2>
+                <div class="row" id="container">
+                </div>
+                <div class="right-align">
+                    <a class="btn-floating btn-large waves-effect waves-light red" href="/new-item/new-item.html"><i class="material-icons">add</i></a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

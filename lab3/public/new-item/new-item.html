@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title>Item Shopping App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <span class="title"> Login </span>
+                    <form id="new-item-form">
+                        <div class="input-field">
+                            <input placeholder="Name" name="name" type="text">
+                            <label for="name">Name </label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="description" name="description" type="text">
+                            <label for="description">Description</label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="price" name="price" type="number">
+                            <label for="price">Price</label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="rating" name="rating" type="number">
+                            <label for="rating">Rating</label>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="new-item.js"></script>
+    </body>
+</html>
